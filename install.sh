@@ -32,6 +32,7 @@ EOI
 chmod 644 /lib/systemd/system/train.service
 systemctl daemon-reload
 systemctl enable train.service
+systemctl start train.service
 systemctl status train.service
 
 # |
