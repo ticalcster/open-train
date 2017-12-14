@@ -7,6 +7,8 @@
 # wget -qO- https://raw.githubusercontent.com/ticalcster/open-train/master/install.sh | bash -
 #
 
+pip3 install
+
 cat > /opt/test.py <<EOI
 import time
 

@@ -1,5 +1,1 @@
-import time
-
-while True:
-    time.sleep(2)
-    print('I am in the loop')
+__version__ = '1.0.0'
