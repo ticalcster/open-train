@@ -9,15 +9,6 @@
 
 pip3 install git+https://github.com/ticalcster/open-train.git#egg=opentrain
 
-cat > /opt/test.py <<EOI
-import time
-
-while True:
-    time.sleep(2)
-    print('I am in the loop')
-EOI
-
-
 cat > /lib/systemd/system/train.service <<EOI
 [Unit]
 Description=Open Train
@@ -25,7 +16,7 @@ After=multi-user.target
 
 [Service]
 Type=idle
-ExecStart=/usr/bin/python3 /opt/test.py > /var/log/train.log 2>&1
+ExecStart=/usr/bin/python3 -m opentrain
 
 [Install]
 WantedBy=multi-user.target
