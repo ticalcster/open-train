@@ -12,7 +12,7 @@ pip3 install git+https://github.com/ticalcster/open-train.git#egg=opentrain
 
 cat > /lib/systemd/system/train.service <<EOI
 [Unit]
-Description=Open Train
+Description=OpenTrain
 After=multi-user.target
 
 [Service]
@@ -28,5 +28,3 @@ systemctl daemon-reload
 systemctl enable train.service
 systemctl start train.service
 systemctl status train.service
-
-# |
