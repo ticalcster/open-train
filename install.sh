@@ -7,6 +7,7 @@
 # wget -qO- https://raw.githubusercontent.com/ticalcster/open-train/master/install.sh | bash -
 #
 
+pip3 uninstall opentrain
 pip3 install git+https://github.com/ticalcster/open-train.git#egg=opentrain
 
 cat > /lib/systemd/system/train.service <<EOI
