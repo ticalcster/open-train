@@ -1,0 +1,3 @@
+watchdog
+picamera
+ws4py

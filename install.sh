@@ -6,9 +6,13 @@
 #   or
 # wget -qO- https://raw.githubusercontent.com/ticalcster/open-train/master/install.sh | bash -
 #
+apt update
+apt upgrade
+apt install libav-tools
 
 pip3 uninstall -y opentrain
 pip3 install git+https://github.com/ticalcster/open-train.git#egg=opentrain
+
 
 cat > /lib/systemd/system/train.service <<EOI
 [Unit]
